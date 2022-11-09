@@ -1,6 +1,6 @@
 {
   "name": "anchor-express-cli",
-  "version": "0.0.4",
+  "version": "1.0.4",
   "description": "Anchor Express CLI to create and manage Anchor Express projects",
   "homepage": "https://github.com/Awaiskhan404/anchor-express.git",
   "type": "module",

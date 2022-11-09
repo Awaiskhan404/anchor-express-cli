@@ -28,15 +28,15 @@ async function execute(isCorrect) {
   spinner.stop();
   const downloading = createSpinner('Downloading libs...').start();
   await sleep();
-  shell.exec(`rm -rf .git`);
-  shell.exec(`git init`);
-  shell.exec(`git remote add origin https://github.com/Awaiskhan404/init-anchor-express.git`);
-  shell.exec(`git pull origin master`);
+  shell.exec(`rm -rf .git`,{ silent: true });
+  shell.exec(`git init`,{ silent: true });
+  shell.exec(`git remote add origin https://github.com/Awaiskhan404/init-anchor-express.git`,{ silent: true });
+  shell.exec(`git pull origin master`,{ silent: true });
   downloading.stop();
   const settingup = createSpinner('Cleaning almost done...').start();
-  shell.exec(`npm install`);
-  shell.exec(`mkdir modules`);
-  shell.exec(`mkdir middlewares`);
+  shell.exec(`npm install`,{ silent: true });
+  shell.exec(`mkdir modules`,{ silent: true });
+  shell.exec(`mkdir middlewares`,{ silent: true });
   await sleep();
   settingup.stop();
 }
